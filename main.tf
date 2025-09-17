@@ -134,7 +134,7 @@ resource "aws_route_table_association" "b" {
 
 #Create EC2 Instance
 resource "aws_instance" "webserver1" {
-  ami                    = "ami-0492447090ced6eb5"
+  ami                    = "ami-01b6d88af12965bb6"
   instance_type          = "t2.micro"
   availability_zone      = "ap-south-1a"
   key_name               = "MyKey"
@@ -148,7 +148,7 @@ resource "aws_instance" "webserver1" {
 }
 
 resource "aws_instance" "webserver2" {
-  ami                    = "ami-0492447090ced6eb5"
+  ami                    = "ami-01b6d88af12965bb6"
   instance_type          = "t2.micro"
   availability_zone      = "ap-south-1b"
   key_name               = "MyKey"
@@ -163,7 +163,7 @@ resource "aws_instance" "webserver2" {
 
 #Create EC2 Instance
 resource "aws_instance" "appserver1" {
-  ami                    = "ami-0492447090ced6eb5"
+  ami                    = "ami-01b6d88af12965bb6"
   instance_type          = "t2.micro"
   availability_zone      = "ap-south-1a"
   key_name               = "MyKey"
@@ -175,7 +175,7 @@ resource "aws_instance" "appserver1" {
 }
 
 resource "aws_instance" "appserver2" {
-  ami                    = "ami-0492447090ced6eb5"
+  ami                    = "ami-01b6d88af12965bb6"
   instance_type          = "t2.micro"
   availability_zone      = "ap-south-1b"
   key_name               = "MyKey"
@@ -357,10 +357,10 @@ output "lb_dns_name" {
 
 
 resource "aws_s3_bucket" "example" {
-  bucket = "reyaz-devopsproject-bkt-123"
+  bucket = "reyaz-devopsproject-bkt-123094"
 
   tags = {
-    Name        = "reyaz-devopsproject-bkt-123"
+    Name        = "reyaz-devopsproject-bkt-123094"
     Environment = "Dev"
   }
 }
